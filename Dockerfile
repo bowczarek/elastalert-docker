@@ -46,7 +46,7 @@ ENV ELASTICSEARCH_TLS False
 # Verify TLS
 ENV ELASTICSEARCH_TLS_VERIFY True
 # ElastAlert writeback index
-ENV ELASTALERT_INDEX elastalert_status
+ENV ELASTALERT_INDEX elastalert
 
 WORKDIR /opt
 
