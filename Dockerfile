@@ -17,14 +17,14 @@
 
 FROM alpine
 
-LABEL maintainer="Ivan Krizsan, https://github.com/krizsan"
+LABEL maintainer="Based on https://github.com/krizsan"
 
 # Set this environment variable to True to set timezone on container start.
 ENV SET_CONTAINER_TIMEZONE False
 # Default container timezone as found under the directory /usr/share/zoneinfo/.
 ENV CONTAINER_TIMEZONE Europe/Stockholm
 # URL from which to download Elastalert.
-ENV ELASTALERT_URL https://github.com/Yelp/elastalert/archive/v0.1.26.zip
+ENV ELASTALERT_URL https://github.com/Yelp/elastalert/archive/v0.1.33.zip
 # Directory holding configuration for Elastalert and Supervisor.
 ENV CONFIG_DIR /opt/config
 # Elastalert rules directory.
